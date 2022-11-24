@@ -1,6 +1,6 @@
 const request = require('request');
 const breed = process.argv.slice(2);
-request(`https://api.thecata123pi.com/v1/breeds/search?q=${breed}`, (error, response, body) => {
+request(`https://api.thecatapi.com/v1/breeds/search?q=${breed}`, (error, response, body) => {
 	try {
 		const bodyObject = JSON.parse(body);
 	if (bodyObject.length === 0) {
